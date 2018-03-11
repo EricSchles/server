@@ -1,0 +1,10 @@
+gunicorn
+Flask
+Flask-Migrate
+Flask-Script
+Flask-SQLAlchemy
+honcho
+psycopg2
+requests
+SQLAlchemy
+
