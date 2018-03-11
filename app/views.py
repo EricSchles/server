@@ -11,5 +11,7 @@ def index():
 
 @app.route("/route2", methods=["GET", "POST"])
 def route2():
-    x = request.args()
-    return x
+    import code
+    x = request.get_json()
+    code.interact(local=locals())
+    return jsonify(x)

@@ -5,7 +5,7 @@ from flask_migrate import Migrate, MigrateCommand
 import os
 
     
-username,password = "admin","1234"
+username,password = "basic_admin","1234"
 app = Flask(__name__)
 #app.config["SQLALCHEMY_DATABASE_URI"] = os.getenv("DATABASE_URL")
 app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql://"+username+":"+password+"@localhost/example_db"
